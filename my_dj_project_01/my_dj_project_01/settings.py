@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# 注册/安装子应用
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'my_dj_project_app_01', # 方案1
+    'my_dj_project_app_01.apps.MyDjProjectApp01Config' # 方案2
 ]
 
 MIDDLEWARE = [
